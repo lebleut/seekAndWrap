@@ -1,3 +1,10 @@
+/**
+ * seekAndWrap v 0.1
+ * @author Jamel Eddine Zarga http://www.tooltipy.com
+ *
+ * jQuery Plugin to find a text in a given element and wrap it with a tag and attributes in parameter in order to use it in useful cases.
+ *
+ */
 
 $.fn.seekAndWrap = function( opt ){
   var defaut = {
