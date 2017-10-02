@@ -1,0 +1,16 @@
+
+.ttp,
+.keyword{
+  color:white;
+  padding: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.ttp{
+	background-color: red;
+}
+
+.keyword{
+	background-color: green;
+}
