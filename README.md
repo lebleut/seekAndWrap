@@ -4,7 +4,7 @@
 Example :
 ```html
 <div id="container">
-  Html and JS are the best languages ever...
+  HTML and JS are the best languages ever...
 </div>
 ```
 
@@ -26,3 +26,6 @@ That way you will get :
   Html and <span class="keyword" title="JavaScript" "data-desc"="JavaScript is a client side language.">JS</span> are the best languages ever...
 </div>
 ```
+
+# DEMO
+**[Check this demo page](https://lebleut.github.io/seekAndWrap/test/index.html)**
