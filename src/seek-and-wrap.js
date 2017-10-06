@@ -11,7 +11,7 @@ $.fn.seekAndWrap = function( opt ){
     "search": "",
     "attribs":null,
     "tag":"div",
-    "class":"keyword"
+    "class":""
   };
 
   var params = $.extend(defaut, opt);
