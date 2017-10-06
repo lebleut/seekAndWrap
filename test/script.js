@@ -1,6 +1,7 @@
 
 $("body").seekAndWrap({
   "tag":"span",
+  "class":"keyword",
   "search":"web",
   "attribs":[
     {
