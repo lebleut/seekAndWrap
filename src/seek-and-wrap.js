@@ -11,7 +11,8 @@ $.fn.seekAndWrap = function( opt ){
     "search": "",
     "attribs":null,
     "tag":"div",
-    "class":""
+    "class":"",
+    "insensitive": true
   };
 
   var params = $.extend(defaut, opt);
@@ -23,8 +24,12 @@ $.fn.seekAndWrap = function( opt ){
 
         var before_search = '^|\\W'; // ^|\W : start OR non-word character
         var after_search = '$|\\W';  // $|\\W : end OR non-word character
-
-        var pattern = new RegExp('('+before_search+')('+params.search+')('+after_search+')','ig');
+  
+        var flags = 'g';
+        if( params.insensitive === true ){
+          flags = flags+'i'
+        }
+        var pattern = new RegExp('('+before_search+')('+params.search+')('+after_search+')',flags);
 
         var new_elem;
 
