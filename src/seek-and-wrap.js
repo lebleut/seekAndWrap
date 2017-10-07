@@ -39,7 +39,9 @@ $.fn.seekAndWrap = function( opt ){
 
           if( params.attribs != null && Array.isArray(params.attribs) ){
             params.attribs.forEach(function(attr, index){
-              return new_elem.attr(attr.name, attr.value);
+              if( attr.name != "" ){
+                return new_elem.attr(attr.name, attr.value);
+              }
             });
 
           }
