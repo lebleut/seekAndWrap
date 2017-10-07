@@ -18,7 +18,7 @@ $.fn.seekAndWrap = function( opt ){
   
   function wrapIt( elem, params ){
     elem.contents().each(function(){
-      if( this.nodeType == 3 ){
+      if( this.nodeType == Node.TEXT_NODE ){
         var content = $(this).text();
 
         var before_search = '^|\\W'; // ^|\W : start OR non-word character
